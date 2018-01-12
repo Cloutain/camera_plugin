@@ -1,0 +1,21 @@
+﻿  RenderingPlugin.cpp
+  EulerRotationMatrix.c
+  QuarternionRotationMatrix.c
+  DataQueue.c
+  AlvaTimer.c
+  Dump.c
+  BmpHelper.c
+  ImageConverter.c
+  ImageDistortionCorrection.c
+  ImageFilter.c
+  ImageResize.c
+  ImageRotate.c
+  AndroidHelper.c
+  JniHolder.c
+  aligned_malloc.c
+    正在创建库 E:\ys_alva\tortoise_SVN_WS\AR_Env\branches\Shan.Ye\PlatformInterface\AR_Env\projects\VisualStudio2015\..\..\build\Win32\Release\AR_Env.lib 和对象 E:\ys_alva\tortoise_SVN_WS\AR_Env\branches\Shan.Ye\PlatformInterface\AR_Env\projects\VisualStudio2015\..\..\build\Win32\Release\AR_Env.exp
+  正在生成代码
+  All 586 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  RenderingPlugin.vcxproj -> E:\ys_alva\tortoise_SVN_WS\AR_Env\branches\Shan.Ye\PlatformInterface\AR_Env\projects\VisualStudio2015\..\..\build\Win32\Release\AR_Env.dll
+  RenderingPlugin.vcxproj -> E:\ys_alva\tortoise_SVN_WS\AR_Env\branches\Shan.Ye\PlatformInterface\AR_Env\projects\VisualStudio2015\..\..\build\Win32\Release\AR_Env.pdb (Full PDB)

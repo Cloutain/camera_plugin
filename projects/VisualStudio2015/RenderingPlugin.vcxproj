@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\capture.h" />
+    <ClInclude Include="..\..\source\PlatformBase.h" />
+    <ClInclude Include="..\..\source\RenderAPI.h" />
+    <ClInclude Include="..\..\source\shared\AngleHelper\include\EulerRotationMatrix.h" />
+    <ClInclude Include="..\..\source\shared\AngleHelper\include\QuarternionRotationMatrix.h" />
+    <ClInclude Include="..\..\source\shared\DataQueue\Implements\include\DataQueue.h" />
+    <ClInclude Include="..\..\source\shared\DataQueue\Implements\interface\DataQueueInterface.h" />
+    <ClInclude Include="..\..\source\shared\DebugTools\include\AlvaTimer.h" />
+    <ClInclude Include="..\..\source\shared\DebugTools\include\Dump.h" />
+    <ClInclude Include="..\..\source\shared\DebugTools\include\ErrorTools.h" />
+    <ClInclude Include="..\..\source\shared\DebugTools\include\Log.h" />
+    <ClInclude Include="..\..\source\shared\GlobalConfig\Config.h" />
+    <ClInclude Include="..\..\source\shared\GlobalConfig\Format.h" />
+    <ClInclude Include="..\..\source\shared\ImageHelper\include\BmpHelper.h" />
+    <ClInclude Include="..\..\source\shared\ImageHelper\include\ImageConverter.h" />
+    <ClInclude Include="..\..\source\shared\ImageHelper\include\ImageDistortionCorrection.h" />
+    <ClInclude Include="..\..\source\shared\ImageHelper\include\ImageFilter.h" />
+    <ClInclude Include="..\..\source\shared\ImageHelper\include\ImageResize.h" />
+    <ClInclude Include="..\..\source\shared\ImageHelper\include\ImageRotate.h" />
+    <ClInclude Include="..\..\source\shared\JniHelper\include\AndroidHelper.h" />
+    <ClInclude Include="..\..\source\shared\JniHelper\include\JniHolder.h" />
+    <ClInclude Include="..\..\source\shared\MultiThread\include\AlvaThread.h" />
+    <ClInclude Include="..\..\source\shared\std-multi-platform\aligned_malloc.h" />
+    <ClInclude Include="..\..\source\shared\std-multi-platform\memory_fl.h" />
+    <ClInclude Include="..\..\source\shared\std-multi-platform\stdio_fl.h" />
+    <ClInclude Include="..\..\source\shared\std-multi-platform\stdlib_fl.h" />
+    <ClInclude Include="..\..\source\shared\std-multi-platform\string_fl.h" />
+    <ClInclude Include="..\..\source\Unity\IUnityGraphics.h" />
+    <ClInclude Include="..\..\source\Unity\IUnityGraphicsD3D11.h" />
+    <ClInclude Include="..\..\source\Unity\IUnityGraphicsD3D12.h" />
+    <ClInclude Include="..\..\source\Unity\IUnityGraphicsD3D9.h" />
+    <ClInclude Include="..\..\source\Unity\IUnityGraphicsMetal.h" />
+    <ClInclude Include="..\..\source\Unity\IUnityInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\capture.cpp" />
+    <ClCompile Include="..\..\source\RenderAPI.cpp" />
+    <ClCompile Include="..\..\source\RenderAPI_D3D11.cpp" />
+    <ClCompile Include="..\..\source\RenderAPI_D3D12.cpp" />
+    <ClCompile Include="..\..\source\RenderAPI_D3D9.cpp" />
+    <ClCompile Include="..\..\source\RenderingPlugin.cpp" />
+    <ClCompile Include="..\..\source\shared\AngleHelper\src\EulerRotationMatrix.c" />
+    <ClCompile Include="..\..\source\shared\AngleHelper\src\QuarternionRotationMatrix.c" />
+    <ClCompile Include="..\..\source\shared\DataQueue\Implements\src\DataQueue.c" />
+    <ClCompile Include="..\..\source\shared\DebugTools\src\AlvaTimer.c" />
+    <ClCompile Include="..\..\source\shared\DebugTools\src\Dump.c" />
+    <ClCompile Include="..\..\source\shared\ImageHelper\src\BmpHelper.c" />
+    <ClCompile Include="..\..\source\shared\ImageHelper\src\ImageConverter.c" />
+    <ClCompile Include="..\..\source\shared\ImageHelper\src\ImageDistortionCorrection.c" />
+    <ClCompile Include="..\..\source\shared\ImageHelper\src\ImageFilter.c" />
+    <ClCompile Include="..\..\source\shared\ImageHelper\src\ImageResize.c" />
+    <ClCompile Include="..\..\source\shared\ImageHelper\src\ImageRotate.c" />
+    <ClCompile Include="..\..\source\shared\JniHelper\src\AndroidHelper.c" />
+    <ClCompile Include="..\..\source\shared\JniHelper\src\JniHolder.c" />
+    <ClCompile Include="..\..\source\shared\JniHelper\src\JniLoad.cpp" />
+    <ClCompile Include="..\..\source\shared\std-multi-platform\aligned_malloc.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\source\RenderingPlugin.def" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F7CFEF5A-54BD-42E8-A59E-54ABAEB4EA9C}</ProjectGuid>
+    <RootNamespace>RenderingPlugin</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\..\build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\build\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\source\Shared\DebugTools\include;..\..\source\Shared\std-multi-platform;..\..\source\Shared\DataQueue\Implements\interface;..\..\source\Shared\DataQueue\Implements\include;..\..\source\Shared\MultiThread\include;..\..\source\Shared\ImageHelper\Core\include;..\..\source\Shared\JniHelper\include;..\..\source\shared\GlobalConfig;..\..\source\shared\ImageHelper\include;..\..\source\shared\ImageHelper\src;..\..\source\shared\AngleHelper\include;..\..\source\shared\AngleHelper\src;..\..\source\Shared\DataQueue\Implements\src;$(IncludePath)</IncludePath>
+    <TargetName>AR_Env</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)..\..\build\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>..\..\source\Shared\DebugTools\include;..\..\source\Shared\std-multi-platform;..\..\source\Shared\DataQueue\Implements\interface;..\..\source\Shared\DataQueue\Implements\include;..\..\source\Shared\MultiThread\include;..\..\source\Shared\ImageHelper\Core\include;..\..\source\Shared\JniHelper\include;..\..\source\shared\GlobalConfig;..\..\source\shared\ImageHelper\include;..\..\source\shared\ImageHelper\src;..\..\source\shared\AngleHelper\include;..\..\source\shared\AngleHelper\src;..\..\source\Shared\DataQueue\Implements\src;$(IncludePath)</IncludePath>
+    <TargetName>AR_Env</TargetName>
+    <OutDir>$(SolutionDir)..\..\build\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(SolutionDir)..\..\build\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\..\source\Shared\DebugTools\include;..\..\source\Shared\std-multi-platform;..\..\source\Shared\DataQueue\Implements\interface;..\..\source\Shared\DataQueue\Implements\include;..\..\source\Shared\MultiThread\include;..\..\source\Shared\ImageHelper\Core\include;..\..\source\Shared\JniHelper\include;..\..\source\shared\GlobalConfig;..\..\source\shared\ImageHelper\include;..\..\source\shared\ImageHelper\src;..\..\source\shared\AngleHelper\include;..\..\source\shared\AngleHelper\src;..\..\source\Shared\DataQueue\Implements\src;$(IncludePath)</IncludePath>
+    <TargetName>AR_Env</TargetName>
+    <OutDir>$(SolutionDir)..\..\build\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\build\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>..\..\source\Shared\DebugTools\include;..\..\source\Shared\std-multi-platform;..\..\source\Shared\DataQueue\Implements\interface;..\..\source\Shared\DataQueue\Implements\include;..\..\source\Shared\MultiThread\include;..\..\source\Shared\ImageHelper\Core\include;..\..\source\Shared\JniHelper\include;..\..\source\shared\GlobalConfig;..\..\source\shared\ImageHelper\include;..\..\source\shared\ImageHelper\src;..\..\source\shared\AngleHelper\include;..\..\source\shared\AngleHelper\src;..\..\source\Shared\DataQueue\Implements\src;$(IncludePath)</IncludePath>
+    <TargetName>AR_Env</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GLEW_STATIC;WIN32;_DEBUG;_WINDOWS;_USRDLL;RENDERINGPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../</AdditionalIncludeDirectories>
+      <AdditionalOptions>/DOS_ALVA=OS_Windows /DCPU_ALVA=CPU_x86  /DDebugInfo_Switch=Debug_Alva /DAlva_Use_Version=Alva_GL_Version /D_USRDLL=1 /DDLL_EXPORTS=1 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ModuleDefinitionFile>../../source/RenderingPlugin.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GLEW_STATIC;WIN32;_DEBUG;_WINDOWS;_USRDLL;RENDERINGPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../;../../source/opencv/include</AdditionalIncludeDirectories>
+      <AdditionalOptions>/DOS_ALVA=OS_Windows /DCPU_ALVA=CPU_x64  /DDebugInfo_Switch=Debug_Alva /DAlva_Use_Version=Alva_GL_Version /D_USRDLL=1 /DDLL_EXPORTS=1 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;rec.lib;Strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>../../source/RenderingPlugin.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\;$(SolutionDir)../../source/opencv/x64/vc14/lib</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>GLEW_STATIC;WIN32;NDEBUG;_WINDOWS;_USRDLL;RENDERINGPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <AdditionalOptions>/DOS_ALVA=OS_Windows /DCPU_ALVA=CPU_x86 /DDebugInfo_Switch=Release_Alva /DAlva_Use_Version=Alva_GL_Version /D_USRDLL=1 /DDLL_EXPORTS=1 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ModuleDefinitionFile>../../source/RenderingPlugin.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>GLEW_STATIC;WIN32;NDEBUG;_WINDOWS;_USRDLL;RENDERINGPLUGIN_EXPORTS;DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../;../../source/opencv/include</AdditionalIncludeDirectories>
+      <AdditionalOptions>/DOS_ALVA=OS_Windows /DCPU_ALVA=CPU_x64  /DDebugInfo_Switch=Release_Alva /DAlva_Use_Version=Alva_GL_Version /D_USRDLL=1 /DDLL_EXPORTS=1 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;Strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ModuleDefinitionFile>../../source/RenderingPlugin.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\;$(SolutionDir)../../source/opencv/x64/vc14/lib</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

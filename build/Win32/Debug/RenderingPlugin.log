@@ -1,0 +1,59 @@
+﻿  JniLoad.cpp
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  RenderingPlugin.cpp
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  RenderAPI_D3D9.cpp
+  RenderAPI_D3D12.cpp
+  RenderAPI_D3D11.cpp
+  RenderAPI.cpp
+  capture.cpp
+  正在生成代码...
+  aligned_malloc.c
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  JniHolder.c
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  AndroidHelper.c
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  ImageRotate.c
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  ImageResize.c
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  ImageFilter.c
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  ImageDistortionCorrection.c
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  ImageConverter.c
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  BmpHelper.c
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  Dump.c
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  AlvaTimer.c
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  DataQueue.c
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  QuarternionRotationMatrix.c
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  EulerRotationMatrix.c
+  Info(No harm): Dump is turned on.
+  Info(No harm): Flow_Track is turned on.
+  正在生成代码...
+capture.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+    正在创建库 E:\ys_alva\tortoise_SVN_WS\AR_Env\branches\Shan.Ye\PlatformInterface\AR_Env\projects\VisualStudio2015\..\..\build\Win32\Debug\AR_Env.lib 和对象 E:\ys_alva\tortoise_SVN_WS\AR_Env\branches\Shan.Ye\PlatformInterface\AR_Env\projects\VisualStudio2015\..\..\build\Win32\Debug\AR_Env.exp
+  RenderingPlugin.vcxproj -> E:\ys_alva\tortoise_SVN_WS\AR_Env\branches\Shan.Ye\PlatformInterface\AR_Env\projects\VisualStudio2015\..\..\build\Win32\Debug\AR_Env.dll
+  RenderingPlugin.vcxproj -> E:\ys_alva\tortoise_SVN_WS\AR_Env\branches\Shan.Ye\PlatformInterface\AR_Env\projects\VisualStudio2015\..\..\build\Win32\Debug\AR_Env.pdb (Full PDB)

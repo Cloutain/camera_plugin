@@ -1,0 +1,1 @@
+生成的dll动态库处于本文件同一级目录下面的./build/x64/Release/RenderingPlugin.dll

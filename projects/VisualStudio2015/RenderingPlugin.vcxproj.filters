@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\source\PlatformBase.h" />
+    <ClInclude Include="..\..\source\RenderAPI.h" />
+    <ClInclude Include="..\..\source\Unity\IUnityGraphics.h">
+      <Filter>Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Unity\IUnityGraphicsD3D9.h">
+      <Filter>Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Unity\IUnityGraphicsD3D11.h">
+      <Filter>Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Unity\IUnityGraphicsD3D12.h">
+      <Filter>Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Unity\IUnityGraphicsMetal.h">
+      <Filter>Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Unity\IUnityInterface.h">
+      <Filter>Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\capture.h" />
+    <ClInclude Include="..\..\source\shared\DebugTools\include\AlvaTimer.h">
+      <Filter>DebugTools\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\DebugTools\include\Dump.h">
+      <Filter>DebugTools\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\DebugTools\include\ErrorTools.h">
+      <Filter>DebugTools\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\DebugTools\include\Log.h">
+      <Filter>DebugTools\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\ImageHelper\include\BmpHelper.h">
+      <Filter>ImageHelper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\ImageHelper\include\ImageConverter.h">
+      <Filter>ImageHelper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\ImageHelper\include\ImageDistortionCorrection.h">
+      <Filter>ImageHelper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\ImageHelper\include\ImageFilter.h">
+      <Filter>ImageHelper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\ImageHelper\include\ImageResize.h">
+      <Filter>ImageHelper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\ImageHelper\include\ImageRotate.h">
+      <Filter>ImageHelper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\MultiThread\include\AlvaThread.h">
+      <Filter>MultiThread\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\GlobalConfig\Config.h">
+      <Filter>GlobalConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\GlobalConfig\Format.h">
+      <Filter>GlobalConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\JniHelper\include\AndroidHelper.h">
+      <Filter>JniHelper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\JniHelper\include\JniHolder.h">
+      <Filter>JniHelper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\std-multi-platform\aligned_malloc.h">
+      <Filter>std-multi-platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\std-multi-platform\memory_fl.h">
+      <Filter>std-multi-platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\std-multi-platform\stdio_fl.h">
+      <Filter>std-multi-platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\std-multi-platform\stdlib_fl.h">
+      <Filter>std-multi-platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\std-multi-platform\string_fl.h">
+      <Filter>std-multi-platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\AngleHelper\include\EulerRotationMatrix.h">
+      <Filter>AngerHelper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\AngleHelper\include\QuarternionRotationMatrix.h">
+      <Filter>AngerHelper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\DataQueue\Implements\interface\DataQueueInterface.h">
+      <Filter>DataQueue\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\shared\DataQueue\Implements\include\DataQueue.h">
+      <Filter>DataQueue\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\RenderAPI.cpp" />
+    <ClCompile Include="..\..\source\RenderAPI_D3D9.cpp" />
+    <ClCompile Include="..\..\source\RenderAPI_D3D11.cpp" />
+    <ClCompile Include="..\..\source\RenderingPlugin.cpp" />
+    <ClCompile Include="..\..\source\RenderAPI_D3D12.cpp" />
+    <ClCompile Include="..\..\source\capture.cpp" />
+    <ClCompile Include="..\..\source\shared\DebugTools\src\AlvaTimer.c">
+      <Filter>DebugTools\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\DebugTools\src\Dump.c">
+      <Filter>DebugTools\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\ImageHelper\src\BmpHelper.c">
+      <Filter>ImageHelper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\ImageHelper\src\ImageConverter.c">
+      <Filter>ImageHelper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\ImageHelper\src\ImageDistortionCorrection.c">
+      <Filter>ImageHelper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\ImageHelper\src\ImageFilter.c">
+      <Filter>ImageHelper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\ImageHelper\src\ImageResize.c">
+      <Filter>ImageHelper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\ImageHelper\src\ImageRotate.c">
+      <Filter>ImageHelper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\JniHelper\src\AndroidHelper.c">
+      <Filter>JniHelper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\JniHelper\src\JniHolder.c">
+      <Filter>JniHelper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\JniHelper\src\JniLoad.cpp">
+      <Filter>JniHelper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\std-multi-platform\aligned_malloc.c">
+      <Filter>std-multi-platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\AngleHelper\src\EulerRotationMatrix.c">
+      <Filter>AngerHelper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\AngleHelper\src\QuarternionRotationMatrix.c">
+      <Filter>AngerHelper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\shared\DataQueue\Implements\src\DataQueue.c">
+      <Filter>DataQueue\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Unity">
+      <UniqueIdentifier>{c01468d4-90d4-4d19-9a9b-ee2f1b5e9083}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DebugTools">
+      <UniqueIdentifier>{1cb3468f-12dc-4bbe-8cc4-3a01718012bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImageHelper">
+      <UniqueIdentifier>{1301cccc-bf00-4715-99c1-3f169a459a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="std-multi-platform">
+      <UniqueIdentifier>{f2d33f98-9399-43b7-84cb-b69190cbbe5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MultiThread">
+      <UniqueIdentifier>{ba38f59c-4c1e-4028-9d01-42483574763d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JniHelper">
+      <UniqueIdentifier>{9d3a6429-25ee-4b6e-8f96-425f6341eaf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DebugTools\include">
+      <UniqueIdentifier>{c7d2386a-a542-469e-9f1c-eb595cb4bb2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DebugTools\src">
+      <UniqueIdentifier>{9a7f4d3f-39f5-41f4-8e4f-d2782211ce8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImageHelper\include">
+      <UniqueIdentifier>{c9a206ce-5df1-4cd6-96e6-1e9213a7ff54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImageHelper\src">
+      <UniqueIdentifier>{1a5f1125-f883-48f5-874c-ed3b69a6f35b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GlobalConfig">
+      <UniqueIdentifier>{d878da6a-f896-4200-b313-0d6622c5e0fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MultiThread\include">
+      <UniqueIdentifier>{c95aa4c3-5206-4515-a623-d0ab808603d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JniHelper\include">
+      <UniqueIdentifier>{79639af4-0fc4-4481-b828-adb9da51383f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JniHelper\src">
+      <UniqueIdentifier>{5bc1507a-5dac-4eed-85d4-0a836ae4d793}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AngerHelper">
+      <UniqueIdentifier>{6eb51eac-5f91-4a69-9931-a5ddeef6bcf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AngerHelper\include">
+      <UniqueIdentifier>{a0d1591f-1ae3-41e6-85be-d70a374208e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AngerHelper\src">
+      <UniqueIdentifier>{2c798567-59d8-41ed-8967-78b0f37c693d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataQueue">
+      <UniqueIdentifier>{16931c42-ec5d-4575-b502-193b64c75c1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataQueue\include">
+      <UniqueIdentifier>{f396719d-51cc-4a85-80cb-a912f78aea8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataQueue\src">
+      <UniqueIdentifier>{5d8b2ca8-ae95-4fb9-875c-8648e9a24f3a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\source\RenderingPlugin.def" />
+  </ItemGroup>
+</Project>
